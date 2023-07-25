@@ -1,9 +1,9 @@
-import BannerHome from "@/components/banner-home";
+import BannerHome from "@/app/_components/banner-home";
 import ProductList from "./_components/ProductList";
 
 export default function Home() {
   return (
-    <main className="pb-17">
+    <main className="pb-16">
       <section>
         <BannerHome />
       </section>

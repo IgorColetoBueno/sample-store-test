@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Typography from "../typography";
+import Typography from "../../../components/typography";
 import styles from "./styles.module.css";
 
 
@@ -12,7 +12,7 @@ const BannerHome = () => {
             <Image width={100} height={33} alt="Logo" src="/logo.svg" />
           </div>
           <div className="text-white font-thin sm:self-end ">
-            <Typography variant="text-h2" tag="h2" font="font-serif">
+            <Typography variant="text-h2" tag="h2" font="font-serif" className="font-light">
               Category
             </Typography>
           </div>
