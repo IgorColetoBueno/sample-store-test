@@ -6,7 +6,16 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: "693px",
+      md: "796px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     spacing: {
+      button: "0.62rem",
+      '0.5': "0.25rem",
       1: "0.5rem",
       2: "0.75rem",
       3: "1rem",
@@ -48,9 +57,13 @@ module.exports = {
       38: "16.5rem",
       39: "17rem",
       40: "17.5rem",
+      41: "18rem",
+      42: "18.5rem",
+      43: "19rem",
     },
     extend: {
       fontSize: {
+        "button-text": "0.87rem",
         h1: "4rem",
         h2: "3rem",
         h3: "2.18rem",
@@ -67,8 +80,8 @@ module.exports = {
       },
       colors: {
         cyan: {
-          400: "#099A9A",
-          500: "#158A8A",
+          1: "#099A9A",
+          2: "#158A8A",
         },
         gray: {
           1: "#8A8A8A",

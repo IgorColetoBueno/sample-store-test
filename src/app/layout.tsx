@@ -1,7 +1,7 @@
-import "./globals.css";
 import type { Metadata } from "next";
+import { Poppins, Prata } from "next/font/google";
 import { twJoin } from "tailwind-merge";
-import { Prata, Poppins } from "next/font/google";
+import "./globals.css";
 
 const prata = Prata({
   weight: "400",
@@ -27,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full w-full base-layout">
-      <body className={twJoin(prata.className, poppins.className, "h-full w-full")}>
+      <body
+        suppressHydrationWarning
+        className={twJoin(prata.className, poppins.className, "h-full w-full")}
+      >
         {children}
       </body>
     </html>
