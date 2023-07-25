@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["usaflextatix.vtexassets.com"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
