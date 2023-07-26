@@ -2,7 +2,6 @@ import ProductCard from "@/components/product-card";
 import Typography from "@/components/typography";
 import { Product } from "@/model/Product";
 import fetcher from "@/util/fetcher";
-import { twJoin } from "tailwind-merge";
 
 const ProductList = async () => {
   const products: Product[] = await fetcher("/products").then((r) => r.json());
